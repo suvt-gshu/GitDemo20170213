@@ -11,6 +11,8 @@
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *myLabel;
+@property (weak, nonatomic) IBOutlet UILabel *leftLabel;
+@property (weak, nonatomic) IBOutlet UILabel *rightLabel;
 
 @end
 
@@ -29,13 +31,13 @@
 #pragma mark - IBAction
 
 - (IBAction)leftButtonTapped:(id)sender {
-    self.myLabel.text = @"Left Button Tapped!";
+    self.leftLabel.text = @"Left!";
 }
 - (IBAction)midButtonTapped:(id)sender {
-    self.myLabel.text = @"Middle Button Tapped!";
+    self.myLabel.text = @"Middle!";
 }
 - (IBAction)rightButtonTapped:(id)sender {
-    self.myLabel.text = @"Right Button Tapped!";
+    self.rightLabel.text = @"Right!";
 }
 
 @end

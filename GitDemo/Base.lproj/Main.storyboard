@@ -22,8 +22,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text will be shown here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1OI-aR-uVV">
-                                <rect key="frame" x="98" y="323.5" width="178" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text_L" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fot-Ig-Kom" userLabel="Label_L">
+                                <rect key="frame" x="69.5" y="323" width="49" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text_M" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1OI-aR-uVV" userLabel="Label_M">
+                                <rect key="frame" x="160" y="323.5" width="54.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text_R" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWs-ii-IPa" userLabel="Label_R">
+                                <rect key="frame" x="256.5" y="323" width="50.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -55,18 +67,24 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="fot-Ig-Kom" firstAttribute="centerX" secondItem="CJc-ks-Hp1" secondAttribute="centerX" id="Gm8-En-Bec"/>
                             <constraint firstItem="pZc-SR-kLP" firstAttribute="centerY" secondItem="IHu-DR-Xii" secondAttribute="centerY" id="I3H-F4-S85"/>
                             <constraint firstItem="IHu-DR-Xii" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IPK-b3-0fC"/>
                             <constraint firstItem="pZc-SR-kLP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="3:2" id="JlV-pv-DW2"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IHu-DR-Xii" secondAttribute="bottom" constant="50" id="U4z-n8-Ogq"/>
                             <constraint firstItem="CJc-ks-Hp1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1:2" id="Utv-FV-lrD"/>
+                            <constraint firstItem="pWs-ii-IPa" firstAttribute="centerX" secondItem="pZc-SR-kLP" secondAttribute="centerX" id="YLJ-7Y-cQt"/>
+                            <constraint firstItem="pWs-ii-IPa" firstAttribute="centerY" secondItem="1OI-aR-uVV" secondAttribute="centerY" id="aoS-kQ-cMx"/>
                             <constraint firstItem="1OI-aR-uVV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g28-Cb-VX4"/>
                             <constraint firstItem="CJc-ks-Hp1" firstAttribute="centerY" secondItem="IHu-DR-Xii" secondAttribute="centerY" id="j07-CB-uZ7"/>
                             <constraint firstItem="1OI-aR-uVV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="phl-Ww-udn"/>
+                            <constraint firstItem="fot-Ig-Kom" firstAttribute="centerY" secondItem="1OI-aR-uVV" secondAttribute="centerY" id="woy-Im-GRR"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="leftLabel" destination="fot-Ig-Kom" id="htD-Mz-s1u"/>
                         <outlet property="myLabel" destination="1OI-aR-uVV" id="TyV-fp-bSA"/>
+                        <outlet property="rightLabel" destination="pWs-ii-IPa" id="WnO-Ug-629"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
